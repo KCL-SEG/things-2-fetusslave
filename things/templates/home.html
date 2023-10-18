@@ -7,5 +7,9 @@
     Things
   </h1>
   <p>Some stuff about things goes here.</p>
+  <form action="{% url 'sign_up' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+  </form>
 </body>
 </html>
